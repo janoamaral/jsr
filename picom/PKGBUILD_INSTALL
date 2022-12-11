@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Update
+cd ./src
+git pull
+meson --buildtype=release . build
+sudo ninja -C build install

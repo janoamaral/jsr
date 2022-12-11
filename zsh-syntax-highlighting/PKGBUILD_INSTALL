@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Update
+cd ./src
+git pull

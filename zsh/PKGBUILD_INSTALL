@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Dependencies
+sudo apt-get install -y gcc make autoconf yodl libncursesw5-dev texinfo
+
+# Update
+git clone git://git.code.sf.net/p/zsh/code src
+
+cd src
+./configure --prefix=/usr --sysconfdir=/etc/zsh --enable-etcdir=/etc/zsh --enable-cap --enable-gdbm
+make
+makeinfo  Doc/zsh.texi --plaintext -o Doc/zsh.txt
+sudo make install

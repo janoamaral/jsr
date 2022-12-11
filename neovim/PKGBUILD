@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Update
+cd ./src
+git fetch
+
+LOCAL=$(git rev-parse HEAD)
+REMOTE=$(git rev-parse @{u})
+
+if [ "$LOCAL" = "$REMOTE" ]; then
+  echo "- Up-to-date"
+else
+  git pull
+  sudo make CMAKE_BUILD_TYPE=Release CMAKE_EXTRA_FLAGS="+clientserver" install
+fi

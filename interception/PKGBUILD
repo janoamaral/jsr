@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Update
+cd ./src
+git fetch
+
+LOCAL=$(git rev-parse HEAD)
+REMOTE=$(git rev-parse @{u})
+
+if [ "$LOCAL" = "$REMOTE" ]; then
+  echo "- Up-to-date"
+else
+  git pull
+  cmake -B build -DCMAKE_BUILD_TYPE=Release
+  cmake --build build
+  cd build
+  make
+  sudo make install
+fi

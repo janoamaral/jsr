@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Update
+git clone https://github.com/sharkdp/bat.git src
+cd ./src
+cargo build --release

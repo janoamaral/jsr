@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Update
+cd ./src
+git pull
+cmake -Bbuild
+cmake --build build
+cd build
+make
+sudo make install

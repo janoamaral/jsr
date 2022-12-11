@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Update
+cd ./src
+git pull
+make -j12 && sudo make install
