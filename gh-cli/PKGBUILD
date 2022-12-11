@@ -2,6 +2,7 @@
 
 # Update
 cd ./src
+git reset --hard
 git fetch
 
 LOCAL=$(git rev-parse HEAD)
