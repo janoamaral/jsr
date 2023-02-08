@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git clone https://github.com/baskerville/sxhkd.git src
+cd ./src
+make -j2 && sudo make install
