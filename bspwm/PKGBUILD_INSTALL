@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Update
+# Install
+git clone https://github.com/baskerville/bspwm.git src
 cd ./src
-git pull
 make -j2 && sudo make install
