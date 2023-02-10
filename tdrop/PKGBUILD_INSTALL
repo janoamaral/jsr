@@ -1,6 +1,6 @@
 #!/bin/sh
 
 # Update
+git clone https://github.com/noctuid/tdrop.git src
 cd ./src
-git pull
 sudo make install
