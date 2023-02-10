@@ -1,0 +1,13 @@
+#!/bin/sh
+
+sudo apt-get install python3-pip ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen luajit luajit-5.1-dev lua-mpack lua-lpeg libunibilium-dev libmsgpack-dev libtermkey-dev -y
+
+git clone https://github.com/neovim/neovim.git src
+
+cd src
+
+rm -rf build/
+rm -rf .deps/
+sudo make distclean
+make CMAKE_BUILD_TYPE=Release CMAKE_EXTRA_FLAGS="+clientserver"
+sudo make install
