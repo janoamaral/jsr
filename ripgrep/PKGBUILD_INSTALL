@@ -1,6 +1,8 @@
 #!/bin/sh
 
+BASEDIR=$(dirname "$0")
 # Update
+git clone https://github.com/BurntSushi/ripgrep.git src
 cd ./src
-git pull
 cargo build --release
+sudo ln -s "${BASEDIR}/src/target/release/rg" /usr/local/bin
