@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Update
+git clone https://github.com/dunst-project/dunst.git src
 cd ./src
-git pull
-make -j2 && sudo make WAYLAND=0 install
+make WAYLAND=0
+sudo make install
