@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Update
+sudo apt install docbook-xsl xsltproc libev-dev libx11-dev libxi-dev asciidoc -y
+git clone https://github.com/Airblader/unclutter-xfixes src
 cd ./src
-git pull
-make -j2 && sudo make install
+make && sudo make install
