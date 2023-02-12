@@ -4,4 +4,4 @@
 git clone https://github.com/dunst-project/dunst.git src
 cd ./src
 make WAYLAND=0
-sudo make install
+sudo make WAYLAND=0 install
