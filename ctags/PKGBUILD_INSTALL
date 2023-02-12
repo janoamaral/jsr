@@ -1,7 +1,0 @@
-#!/bin/sh
-
-# Update
-cd ./src
-
-git pull
-make -j2 && sudo make install
