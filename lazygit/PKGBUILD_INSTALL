@@ -1,0 +1,5 @@
+#!/bin/sh
+
+git clone https://github.com/jesseduffield/lazygit.git ./src
+cd ./src
+go install
