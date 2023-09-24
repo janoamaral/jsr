@@ -1,0 +1,9 @@
+#!/bin/sh
+# Dependencies
+sudo apt install libxcb-xkb-dev
+
+# install
+git clone https://github.com/kovidgoyal/kitty.git src
+cd src
+./dev.sh build
+ln -s $HOME/dev/jsr/kitty/src/kitty/launcher/kitty $HOME/.local/bin/kitty

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Install
+git clone https://github.com/kmonad/kmonad src
+cd ./src
+git checkout 0.4.1
+stack build
+stack install

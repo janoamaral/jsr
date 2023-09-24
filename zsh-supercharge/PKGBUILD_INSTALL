@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Update
+git clone https://github.com/zap-zsh/supercharge.git src
+ln -s $HOME/dev/jsr/zsh-supercharge/src/ $HOME/dots/zsh/plugins/supercharge
