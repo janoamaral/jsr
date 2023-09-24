@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Update
+git clone https://gitlab.com/interception/linux/plugins/caps2esc.git src
 cd ./src
 
-git pull
 cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build

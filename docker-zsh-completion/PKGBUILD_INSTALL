@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Update
+git clone https://github.com/chr-fritz/docker-completion.zshplugin src
