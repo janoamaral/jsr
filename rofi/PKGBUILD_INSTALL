@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Install
+git clone https://github.com/davatorium/rofi.git src
+cd ./src
+mkdir build && cd build
+meson setup build --disable-check
+sudo ninja -C build install
