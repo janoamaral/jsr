@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# deps
+sudo apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libgtk-3-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev libxrandr-dev librsvg2-dev libstartup-notification0-dev
+
+# Update
+git clone https://gitlab.com/o9000/tint2.git src
+cd ./src
+mkdir build
+cd build
+cmake ..
+make -j2 && sudo make install
