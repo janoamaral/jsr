@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Update
+git clone https://github.com/hlissner/zsh-autopair.git src
+ln -s $HOME/dev/jsr/zsh-autopair/src/ $HOME/dots/zsh/plugins/zsh-autopair
