@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Update
+git clone https://github.com/eradman/entr.git src
+cd src
+./configure
+sudo make install

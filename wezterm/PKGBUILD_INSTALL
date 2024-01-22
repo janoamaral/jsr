@@ -1,0 +1,7 @@
+#!/bin/sh
+
+git clone --depth=1 --branch=main --recursive https://github.com/wez/wezterm.git src
+cd src
+git submodule update --init --recursive
+./get-deps
+cargo build --release

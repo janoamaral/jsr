@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Update
+git clone git://git.suckless.org/st src
 cd ./src
 git pull
-make -j2 && make install
+make -j2 && sudo make install

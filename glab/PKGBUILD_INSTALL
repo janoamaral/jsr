@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Update
+git clone git@gitlab.com:gitlab-org/cli.git src
+go install gitlab.com/gitlab-org/cli/cmd/glab@main

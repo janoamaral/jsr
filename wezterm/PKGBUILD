@@ -11,5 +11,5 @@ if [ "$LOCAL" = "$REMOTE" ]; then
   echo "- Up-to-date"
 else
   git pull
-  go build
+  cargo build --release
 fi
