@@ -1,5 +1,5 @@
 #!/bin/sh
 
 # Update
-git clone https://github.com/olets/zsh-abbr.git src
+git clone --recurse-submodules https://github.com/olets/zsh-abbr.git src
 ln -s $HOME/dev/jsr/zsh-abbr/src/ $HOME/dots/zsh/plugins/zsh-abbr
