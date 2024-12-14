@@ -1,0 +1,6 @@
+#!/bin/sh
+
+git clone https://github.com/janoamaral/courier.git src
+cd ./src
+go build -o courier main.go
+ln -s /home/logico/dev/jsr/courier/src/courier ~/.local/bin
