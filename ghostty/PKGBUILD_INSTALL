@@ -1,0 +1,5 @@
+#!/bin/sh
+
+git clone https://github.com/ghostty-org/ghostty.git ./src
+cd ./src
+zig build -Doptimize=ReleaseFast

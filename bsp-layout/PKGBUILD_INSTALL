@@ -1,6 +1,0 @@
-#!/bin/sh
-
-# Install
-git clone https://github.com/phenax/bsp-layout src
-cd ./src
-sudo make install
