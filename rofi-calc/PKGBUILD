@@ -10,7 +10,7 @@ REMOTE=$(git rev-parse @{u})
 if [ "$LOCAL" = "$REMOTE" ]; then
   echo "- Up-to-date"
 else
-  git pull
-make -j2 && sudo make install
-
+    git pull
+    meson setup build
+    meson compile -C build/
 fi

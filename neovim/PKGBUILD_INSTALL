@@ -9,5 +9,4 @@ cd src
 rm -rf build/
 rm -rf .deps/
 sudo make distclean
-make CMAKE_BUILD_TYPE=Release CMAKE_EXTRA_FLAGS="+clientserver"
-sudo make install
+sudo make CMAKE_BUILD_TYPE=Release CMAKE_EXTRA_FLAGS="+clientserver" install
